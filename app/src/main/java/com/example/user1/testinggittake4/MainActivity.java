@@ -4,16 +4,29 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    private Button btnAdd,btnsub,btndivide,btnmul;
+    private TextView tvresult;
+    private EditText etfirst,etsecond;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        init();
     }
+
+    private void init() {
+    btnAdd=(Button)findViewById(R.id.btnAdd);
+
+    }
+
     /* just a comment delete me*/
-    @Override
+ /*   @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -36,5 +49,5 @@ public boolean makeShit()
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }
